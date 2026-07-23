@@ -24,11 +24,11 @@ description: >-
      registered schema, so schema->hub and schema->schema mappings are
      structurally identical.
 
-  NOTE: register the w3id.org/proteus namespace (w3id names are claimed
-  via pull request to the w3id.org repository) before publishing.
-
+#------License-------
+# We can also choose MIT License (TBD)
 license: https://creativecommons.org/publicdomain/zero/1.0/
 
+#-----Prefixes-------
 prefixes:
   linkml: https://w3id.org/linkml/
   skos: http://www.w3.org/2004/02/skos/core#
