@@ -6,8 +6,22 @@ build-backend = "setuptools.build_meta"
 name = "proteus-align"
 version = "0.1.0"
 description = "Alignment computation for the PROTEUS schema registry (SSSOM mapping proposal pipeline)"
+readme = "README.md"
+license = { text = "MIT" }
 requires-python = ">=3.11"
+keywords = ["schema", "alignment", "mapping", "sssom", "ontology", "registry"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
 dependencies = ["pyyaml>=6.0"]
+
+[project.scripts]
+proteus-align = "proteus_align.pipeline:main"
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
